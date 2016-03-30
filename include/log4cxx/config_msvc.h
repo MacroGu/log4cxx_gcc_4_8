@@ -25,10 +25,13 @@
 /* XML support */
 #define HAVE_XML 1
 
-typedef __int64 int64_t;
+typedef long long int64_t;
 
 #ifdef WIN32
 #pragma warning(disable : 4250 4251 4786 4290)
+//typedef __int64 int64_t;
+#else
+//typedef long long int int64_t;
 #endif
 
 #ifdef LOG4CXX_STATIC

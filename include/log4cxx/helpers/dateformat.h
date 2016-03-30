@@ -36,6 +36,7 @@ namespace log4cxx
 			virtual void format(ostream& os, int64_t time) const;
 			String format(int64_t timeMillis) const;
 
+			virtual ~DateFormat(){}
 		protected:
 			TimeZonePtr timeZone;
 			String dateFormat;

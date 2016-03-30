@@ -37,7 +37,7 @@ namespace log4cxx
 	public:
 		// The code assumes that the following constants are in a increasing
 		// sequence.
-		typedef enum PeriodicityType
+		enum PeriodicityType
 		{
 			TOP_OF_TROUBLE	=-1,
 			TOP_OF_MINUTE	= 0,

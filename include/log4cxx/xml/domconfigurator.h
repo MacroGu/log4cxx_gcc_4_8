@@ -208,7 +208,7 @@ files. You can enable log4cxx internal logging by setting the
 				spi::LoggerRepositoryPtr& repository);
 
 		protected:
-			String DOMConfigurator::subst(const String& value);
+			String subst(const String& value);
 
 		protected:
 			void * appenderBag;

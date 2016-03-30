@@ -42,7 +42,7 @@ public:
 		return dst;
 	}
 	
-	static void int64ToString(wchar_t * dst, size_t maxlen, const int64_t& ll)
+	static void int64ToString(wchar_t * dst, size_t maxlen, const long long& ll)
 	{
 #ifdef WIN32
 		_snwprintf(dst, maxlen, L"%I64d", ll);
@@ -51,7 +51,7 @@ public:
 #endif
 	}
 	
-	static void int64ToString(char * dst, size_t maxlen, const int64_t& ll)
+	static void int64ToString(char * dst, size_t maxlen, const long long & ll)
 	{
 #ifdef WIN32
 		_snprintf(dst, maxlen, "%I64d", ll);
